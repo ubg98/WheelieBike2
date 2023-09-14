@@ -1,77 +1,137 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-		<title>Among Us Unblocked - ubg235 GameDistribution</title>
-		<meta name="keywords" content="among us, impostor, online game, io"/>
-		<meta name="description" content="Become the best alien gladiator in Impostor.io. This action game combines the charm of Among Us with the fun of free for all deathmatch."/>
-		<meta property="og:title" content="Impostor.io">
-		<meta property="og:image" content="https://impostor.io/images/share/impostorio.png">
-		<meta property="og:description" content="Become the best alien gladiator in Impostor.io. This action game combines the charm of Among Us with the fun of free for all deathmatch.">
-		<link rel="icon" type="image/png" href="favicon.png" />
-		<script src="patch/js/tweenjs-1.0.0.min.js"></script>
-		<link href="style.ac679dc3ff2b26b4c9cc.css" rel="stylesheet">
-		<script type="text/javascript" src="vendors~main.ac679dc3ff2b26b4c9cc.js"></script>
-		<script type="text/javascript" src="main.ac679dc3ff2b26b4c9cc.js?v8"></script>
-<style>
-#gddisplayad {
-	position: absolute;
-	bottom: 0px;
-	left: 50%;
-	margin-left: -168px;
-	width: 336px;
-	height: 280px;
-	padding: 0;
-	display: none;
-}
-</style>
-	</head>
-	<body style="overflow:hidden;">
-		<script type="text/javascript" src="impostorgd.js?v6"></script>
-		<div id="gddisplayad"></div>
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>Wheelie Bike Unblocked - ubg235 GameDistribution</title>
+	
+	<!-- Standardised web app manifest -->
+	<link rel="manifest" href="appmanifest.json" />
+	
+	<!-- Allow fullscreen mode on iOS devices. (These are Apple specific meta tags.) -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<link rel="apple-touch-icon" sizes="256x256" href="icon-256.png" />
+	<meta name="HandheldFriendly" content="true" />
+	
+	<!-- Chrome for Android web app tags -->
+	<meta name="mobile-web-app-capable" content="yes" />
+	<link rel="shortcut icon" sizes="256x256" href="icon-256.png" />
 
-		<div id="main_menu_ui" style="display: none;">
-			<div id="left_bar" class="desc_ui">
-				<div id="shareBlock">
-					<img src="./images/volume_on.png" alt="sound" id="sound_switch">
-				</div>		
-			</div>
+    <!-- All margins and padding must be zero for the canvas to fill the screen. -->
+	<style type="text/css">
+		* {
+			padding: 0;
+			margin: 0;
+		}
+		html, body {
+			background: #000;
+			color: #fff;
+			overflow: hidden;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+		canvas {
+			touch-action-delay: none;
+			touch-action: none;
+			-ms-touch-action: none;
+		}
+    </style>
+	
+
+</head> 
+ 
+<body style="overflow:hidden;"> 
+	<div id="fb-root"></div>
+	
+	<script>
+	// Issue a warning if trying to preview an exported project on disk.
+	(function(){
+		// Check for running exported on file protocol
+		if (window.location.protocol.substr(0, 4) === "file")
+		{
+			alert("Exported games won't work until you upload them. (When running on the file:/// protocol, browsers block many features from working for security reasons.)");
+		}
+	})();
+	</script>
+	
+	<!-- The canvas must be inside a div called c2canvasdiv -->
+	<div id="c2canvasdiv">
+	
+		<!-- The canvas the project will render to.  If you change its ID, don't forget to change the
+		ID the runtime looks for in the jQuery events above (ready() and cr_sizeCanvas()). -->
+		<canvas id="c2canvas" width="1024" height="640">
+			<!-- This text is displayed if the visitor's browser does not support HTML5.
+			You can change it, but it is a good idea to link to a description of a browser
+			and provide some links to download some popular HTML5-compatible browsers. -->
+			<h1>Your browser does not appear to support HTML5.  Try upgrading your browser to the latest version.  <a href="http://www.whatbrowser.org">What is a browser?</a>
+			<br/><br/><a href="http://www.microsoft.com/windows/internet-explorer/default.aspx">Microsoft Internet Explorer</a><br/>
+			<a href="http://www.mozilla.com/firefox/">Mozilla Firefox</a><br/>
+			<a href="http://www.google.com/chrome/">Google Chrome</a><br/>
+			<a href="http://www.apple.com/safari/download/">Apple Safari</a></h1>
+		</canvas>
+		
+	</div>
+	
+	<!-- Pages load faster with scripts at the bottom -->
+	
+	<!-- Construct 2 exported games require jQuery. -->
+	<script src="jquery-2.1.1.min.js"></script>
+
+
+	
+    <!-- The runtime script.  You can rename it, but don't forget to rename the reference here as well.
+    This file will have been minified and obfuscated if you enabled "Minify script" during export. -->
+	<script src="c2runtime.js"></script>
+
+    <script>
+		// Start the Construct 2 project running on window load.
+		jQuery(document).ready(function ()
+		{			
+			// Create new runtime using the c2canvas
+			cr_createRuntime("c2canvas");
+		});
+		
+		// Pause and resume on page becoming visible/invisible
+		function onVisibilityChanged() {
+			if (document.hidden || document.mozHidden || document.webkitHidden || document.msHidden)
+				cr_setSuspended(true);
+			else
+				cr_setSuspended(false);
+		};
+		
+		document.addEventListener("visibilitychange", onVisibilityChanged, false);
+		document.addEventListener("mozvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("webkitvisibilitychange", onVisibilityChanged, false);
+		document.addEventListener("msvisibilitychange", onVisibilityChanged, false);
+		
+		function OnRegisterSWError(e)
+		{
+			console.warn("Failed to register service worker: ", e);
+		};
+		
+		// Runtime calls this global method when ready to start caching (i.e. after startup).
+		// This registers the service worker which caches resources for offline support.
+		window.C2_RegisterSW = function C2_RegisterSW()
+		{
+			if (!navigator.serviceWorker)
+				return;		// no SW support, ignore call
 			
-			<div id="about">
-				<div class="modal_box">
-					<h1>Among Us - Play for free online game</h1>
-					<div class="modal_scroll">
-						<p>Become the superior life form by defeating other players in Impostor.io! This multiplayer action game
-						is inspired by <a href="https://impostor.io">Among Us</a> and features similar visuals and controls. The gameplay is completely different:
-						no need to worry about sneaking and pretending. The curtains are down, it’s every man (or alien) for himself.
-						Beat everyone up with various weapons and climb to the top of the leader boards. Collect energy cubes to level
-						up and become stronger. Can you survive the battle and become the most powerful impostor in the universe?
-						</p>
-						<p>
-						Fighting in the intergalactic arena will award you some credits. Spend them in the in-game store to buy valuable
-						upgrades. You can customize the color of your character, purchase weapons and hats. Having a unique style will
-						make you look a lot more experienced and intimidating.
-						</p>
-						<h2>How to Play Imostor.io</h2>
-						<p>Control the character by moving the mouse cursor. The direction is indicated by the arrow hovering over the screen.
-						Click LMB to attack and RMB to speed up. Running too often will drain your stamina, preventing you from leveling up.
-						Sometimes it is necessary to avoid a confrontation with a stronger player. Your life consists of several segments – that’s
-						the number of hits you can take. If you are low on health, look for more cubes – upgrading will rejuvenate you.
-						</p>
-						<p>
-						If you are a fan of Among Us, don’t hesitate to give this game a try. It’s a hilarious homage to the viral sensation. Unlike
-						the original, it doesn’t require you to communicate with other players. Kill them all one by one, and get the highest score.
-						</p>
-					</div>
-					<p>
-						<a href="#aboutclose" onclick="HideAbout();">
-							Close window
-						</a>
-					</p>
-				</div>
-			</div>
-		</div>
+			try {
+				navigator.serviceWorker.register("sw.js", { scope: "./" })
+				.then(function (reg)
+				{
+					console.log("Registered service worker on " + reg.scope);
+				})
+				.catch(OnRegisterSWError);
+			}
+			catch (e)
+			{
+				OnRegisterSWError(e);
+			}
+		};
+    </script>
     <script src="js/analytics_ubg_v1_4.js"></script>
-	</body>
-</html>
+</body> 
+</html> 
